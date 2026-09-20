@@ -82,6 +82,14 @@ h2{font-size:clamp(28px,7.5vw,38px);text-transform:uppercase}
 .card{display:flex;gap:16px;align-items:flex-start;padding:24px 20px;border-radius:18px;background:var(--card);box-shadow:0 6px 24px rgba(0,0,0,.06);font-size:15px;font-weight:700;line-height:1.5}
 .card .ic{flex:none;width:56px;height:56px;border-radius:12px;background:#fff;object-fit:contain}
 
+/* CARROSSEL */
+.marquee{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.track{display:flex;gap:16px;width:max-content;animation:slide 36s linear infinite}
+.track img{width:220px;aspect-ratio:900/1270;object-fit:cover;border-radius:12px;box-shadow:0 8px 24px rgba(43,20,102,.12);background:#fff}
+.marquee:hover .track{animation-play-state:paused}
+@keyframes slide{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+@media(prefers-reduced-motion:reduce){.track{animation:none}}
+
 /* URGÊNCIA */
 .urg .eyebrow{color:var(--red);font-style:italic}
 .urg h2{font-size:clamp(34px,9.5vw,46px);text-transform:none}
@@ -259,6 +267,11 @@ footer a{text-decoration:underline}
       <div class="card"><img class="ic" src="imagens/icone-calendario.webp" alt="">Download imediato, sem mensalidade e com acesso vitalício.</div>
     </div>
   </div>
+</section>
+
+<!-- CARROSSEL -->
+<section class="carrossel" style="padding-top:0">
+  <div class="marquee"><div class="track"><img src="imagens/folha-1.webp" alt="Exemplo de atividade adaptada 1" loading="lazy"><img src="imagens/folha-2.webp" alt="Exemplo de atividade adaptada 2" loading="lazy"><img src="imagens/folha-3.webp" alt="Exemplo de atividade adaptada 3" loading="lazy"><img src="imagens/folha-4.webp" alt="Exemplo de atividade adaptada 4" loading="lazy"><img src="imagens/folha-5.webp" alt="Exemplo de atividade adaptada 5" loading="lazy"><img src="imagens/folha-6.webp" alt="Exemplo de atividade adaptada 6" loading="lazy"><img src="imagens/folha-1.webp" alt="Exemplo de atividade adaptada 1" loading="lazy"><img src="imagens/folha-2.webp" alt="Exemplo de atividade adaptada 2" loading="lazy"><img src="imagens/folha-3.webp" alt="Exemplo de atividade adaptada 3" loading="lazy"><img src="imagens/folha-4.webp" alt="Exemplo de atividade adaptada 4" loading="lazy"><img src="imagens/folha-5.webp" alt="Exemplo de atividade adaptada 5" loading="lazy"><img src="imagens/folha-6.webp" alt="Exemplo de atividade adaptada 6" loading="lazy"></div></div>
 </section>
 
 <!-- URGÊNCIA -->
