@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>180 Atividades Adaptadas e Não Infantilizadas — Alunos Autistas do 6º ao 9º ano</title>
+<meta name="description" content="180 atividades adaptadas para alunos autistas do 6º ao 9º ano, organizadas por matéria, ano e nível de apoio, prontas para imprimir em folha comum.">
+<meta name="theme-color" content="#2b1466">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="64x64" href="imagens/favicon-64.png">
+<link rel="apple-touch-icon" href="imagens/favicon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="180 Atividades Adaptadas e Não Infantilizadas — Alunos Autistas do 6º ao 9º ano">
+<meta property="og:description" content="Organizadas por matéria, ano e nível de apoio, prontas para imprimir em folha comum e aplicar na próxima aula.">
+<meta property="og:image" content="imagens/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{
+  --navy:#2b1466; --navy2:#1f0e4d; --beige:#f3effb; --beige2:#faf8ff; --card:#fff;
+  --ink:#1c1235; --muted:#5a4f7a; --muted-light:#cfc6ee;
+  --green:#1fb5a5; --green2:#178f83; --gold:#5ee6d8; --red:#e0245e; --mint:#e9f8f6; --mint-line:#b8e8e1;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--beige);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:560px;margin:0 auto;padding:0 16px}
+section{padding:52px 0}
+.dark{background:var(--navy);color:#fff}
+.dark .muted{color:var(--muted-light)}
+h1,h2,h3{font-weight:900;line-height:1.12;letter-spacing:-.01em;text-align:center}
+h2{font-size:clamp(28px,7.5vw,38px);text-transform:uppercase}
+.eyebrow{text-align:center;font-size:12px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;margin-bottom:14px}
+.pill{display:block;width:fit-content;margin:0 auto 22px;padding:9px 18px;border-radius:999px;background:var(--beige);color:var(--navy);font-size:13px;font-weight:800}
+.btn{display:flex;align-items:center;justify-content:center;width:100%;padding:19px 20px;border-radius:999px;background:var(--green);color:#fff;font-weight:900;font-size:17px;letter-spacing:.02em;text-transform:uppercase;box-shadow:0 0 0 8px rgba(31,181,165,.28),0 10px 30px rgba(0,0,0,.25);border:0;cursor:pointer;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-2px);background:var(--green2)}
+.note{text-align:center;font-size:12px;margin-top:12px;opacity:.75}
+.check{list-style:none;display:grid;gap:14px;margin-top:26px}
+.check li{display:flex;gap:12px;font-size:15px;font-weight:700;line-height:1.4}
+.check li::before{content:"✓";flex:none;font-weight:900;color:var(--green)}
+.dark .check li{color:var(--gold)}
+.dark .check.white li{color:#fff;font-weight:600}
+.dark .check.white li::before{color:#5ee6d8}
+
+/* placeholder de imagem: some quando a imagem carrega */
+.ph{position:relative;border-radius:16px;overflow:hidden;background:#e6dff5;min-height:220px;display:grid;place-items:center;color:#5c6b72;font-size:13px;font-weight:700;text-align:center;padding:16px}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+/* HERO */
+.hero{padding:44px 0 40px;text-align:center;background:radial-gradient(ellipse at top,#4a2aa8 0%,var(--navy) 65%)}
+.hero h1{font-size:clamp(30px,8vw,44px)}
+.hero .sub{margin-top:22px;font-size:clamp(16px,4.6vw,19px);font-weight:700;color:var(--muted-light)}
+.hero .ph{margin-top:32px;min-height:0;aspect-ratio:1200/676;background:#fff}
+.hero .btn{margin-top:28px}
+
+/* DOR */
+.dor{padding-top:8px}
+.dor p{margin-top:24px;font-size:17px;font-weight:700;line-height:1.55;text-align:center}
+.dor .btn{margin-top:32px}
+
+/* COMPARADOR */
+.cmp{position:relative;margin-top:28px;border-radius:14px;overflow:hidden;aspect-ratio:615/797;background:#fff;box-shadow:0 12px 40px rgba(0,0,0,.15);--x:50%}
+.cmp .ph{position:absolute;inset:0;border-radius:0;min-height:0}
+.cmp .antes{clip-path:inset(0 calc(100% - var(--x)) 0 0)}
+.cmp .antes.ph{background:#fbe9e0}
+.cmp .handle{position:absolute;top:0;bottom:0;left:var(--x);width:3px;background:#fff;transform:translateX(-50%);pointer-events:none;box-shadow:0 0 0 1px rgba(0,0,0,.2)}
+.cmp .handle::after{content:"◀ ▶";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:48px;height:48px;border-radius:50%;background:#fff;color:var(--navy);display:grid;place-items:center;font-size:12px;font-weight:900;box-shadow:0 4px 14px rgba(0,0,0,.3)}
+.cmp input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.cmp .lbl{position:absolute;top:12px;padding:5px 10px;border-radius:6px;font-size:11px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;pointer-events:none}
+.cmp .lbl.l{left:12px;background:var(--red);color:#fff}
+.cmp .lbl.r{right:12px;background:var(--green);color:#fff}
+.cmp-hint{text-align:center;font-size:13px;color:var(--muted);margin-top:12px}
+
+/* CARDS BEGE */
+.cards{display:grid;gap:14px;margin-top:30px}
+.card{display:flex;gap:16px;align-items:flex-start;padding:24px 20px;border-radius:18px;background:var(--card);box-shadow:0 6px 24px rgba(0,0,0,.06);font-size:15px;font-weight:700;line-height:1.5}
+.card .ic{flex:none;width:56px;height:56px;border-radius:12px;background:#fff;object-fit:contain}
+
+/* URGÊNCIA */
+.urg .eyebrow{color:var(--red);font-style:italic}
+.urg h2{font-size:clamp(34px,9.5vw,46px);text-transform:none}
+.urg .btn{margin-top:34px}
+
+/* IDEAL */
+.ideal .card{display:block;background:var(--mint);border:1px solid var(--mint-line)}
+.ideal .card b{display:flex;gap:10px;font-size:15px;text-transform:uppercase;line-height:1.3}
+.ideal .card b::before{content:"✓";color:var(--green);font-weight:900}
+.ideal .card p{margin-top:10px;padding-left:22px;font-size:14px;font-weight:600;color:var(--muted)}
+
+/* RECEBER */
+.box{margin-top:30px;padding:32px 22px;border-radius:26px;background:var(--navy);color:#fff}
+.tag{display:block;width:fit-content;margin:0 auto 22px;padding:8px 16px;border-radius:999px;background:var(--green);font-size:12px;font-weight:900;letter-spacing:.06em;text-transform:uppercase}
+.box h3{font-size:clamp(24px,6.5vw,32px);text-transform:uppercase}
+.box p{margin-top:18px;text-align:center;font-size:15px;font-weight:700;color:var(--muted-light)}
+.box .ph{margin-top:26px;min-height:0;aspect-ratio:1;background:#3a1f85;color:#cfc6ee}
+.box .check{margin-top:30px}
+.box .check li{padding-bottom:14px;border-bottom:1px solid rgba(255,255,255,.1)}
+
+/* BÔNUS */
+.bonus h2 span{display:block;font-size:20px;font-weight:600;font-style:italic;text-transform:none;margin-top:8px;color:var(--muted)}
+.bonus .pill{background:var(--gold);color:var(--ink);margin-top:20px}
+.bcard{position:relative;margin-top:22px;padding:22px 22px 26px;border-radius:20px;background:var(--beige2);box-shadow:0 6px 24px rgba(43,20,102,.08);transition:transform .2s,box-shadow .2s}
+.bcard:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(43,20,102,.18)}
+.bcard .n{position:absolute;top:14px;right:14px;padding:5px 12px;border-radius:999px;background:var(--gold);color:var(--navy);z-index:1;font-size:11px;font-weight:900;letter-spacing:.06em}
+.bcard .ph{min-height:0;aspect-ratio:1;background:#ece6f8}
+.bcard h3{text-align:left;font-size:20px;margin-top:20px}
+.bcard p{margin-top:10px;font-size:15px;font-weight:600;color:var(--muted)}
+.val{display:block;width:fit-content;margin:18px auto 0;padding:9px 20px;border-radius:999px;background:var(--navy);color:#fff;font-size:14px;font-weight:800}
+.val s{opacity:.6;margin:0 4px}
+.val b{color:var(--gold)}
+
+/* OFERTA */
+.plan{margin-top:26px;padding:28px 22px;border-radius:26px;background:#fff;text-align:center;box-shadow:0 6px 24px rgba(0,0,0,.06)}
+.plan .tag{background:var(--navy)}
+.plan .ph{min-height:0;aspect-ratio:1;background:var(--beige2)}
+.plan .ph img{object-fit:contain}
+.plan .check{text-align:left}
+.plan .de{margin-top:26px;font-size:15px;color:var(--muted)}
+.plan .de s{color:#d33}
+.plan .por{font-size:54px;font-weight:900;line-height:1;color:var(--green)}
+.plan .por small{font-size:18px;font-weight:800}
+.plan .meta{margin-top:6px;font-size:13px;color:var(--muted)}
+.plan .btn{margin-top:26px}
+.btn.ghost{background:#fff;color:var(--green);border:2px solid var(--green);box-shadow:none}
+.btn.ghost:hover{background:var(--mint)}
+.plan.full{position:relative;margin-top:40px;background:var(--navy);color:#fff;border:3px solid var(--green);box-shadow:0 0 0 8px rgba(31,181,165,.18)}
+.plan.full .top{position:absolute;top:-16px;left:50%;transform:translateX(-50%);white-space:nowrap;background:var(--gold);color:var(--ink);font-size:12px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;padding:7px 18px;border-radius:999px}
+.plan.full .tag{background:var(--green)}
+.plan.full .ph{background:#3a1f85}
+.plan.full .de,.plan.full .meta{color:var(--muted-light)}
+.plan.full .de s{color:#ff8a8a}
+.plan.full .por{color:#5ee6d8}
+.plan.full .por small{color:#fff}
+.pay{margin-top:16px;display:flex;justify-content:center;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--muted-light)}
+
+/* GARANTIA */
+.gar .g{padding:36px 24px 32px;border-radius:24px;background:#fff;text-align:center;box-shadow:0 10px 40px rgba(43,20,102,.08)}
+.gar .selo{width:140px;margin:0 auto 18px}
+.gar h2{font-size:clamp(24px,6.5vw,30px)}
+.gar h2 span{display:block;color:var(--green);font-size:.7em;margin-top:4px}
+.gar .intro{margin-top:20px;font-size:15px;font-weight:700;color:var(--muted)}
+.gar ul{list-style:none;margin-top:14px;display:grid;gap:8px;text-align:left}
+.gar li{display:flex;gap:10px;align-items:flex-start;font-size:15px;font-weight:600;color:var(--ink)}
+.gar li::before{content:"✓";flex:none;color:var(--green);font-weight:900}
+.gar .fim{margin-top:20px;padding-top:18px;border-top:1px solid #ece6f8;font-size:15px;font-weight:600;color:var(--muted)}
+.gar .fim b{color:var(--navy)}
+
+/* FAQ */
+.faq details{margin-top:12px;padding:0 18px;border-radius:14px;background:#fff;box-shadow:0 6px 24px rgba(0,0,0,.06)}
+.faq summary{cursor:pointer;list-style:none;padding:18px 0;font-weight:800;font-size:15px;display:flex;justify-content:space-between;gap:12px}
+.faq summary::after{content:"+";font-size:22px;color:var(--green);flex:none}
+.faq details[open] summary::after{content:"–"}
+.faq details p{padding:0 0 18px;font-size:14px;font-weight:600;color:var(--muted)}
+
+/* TOPBAR */
+.topbar{background:var(--red);color:#fff;text-align:center;font-size:12px;font-weight:900;letter-spacing:.04em;padding:9px 16px;text-transform:uppercase}
+.eyebrow.fire{color:var(--red)}
+.plan .lead{margin-top:18px;font-weight:800;font-size:15px}
+.plan .save{margin-top:10px;font-size:14px;color:var(--muted)}
+.plan .save b{color:var(--green)}
+.plan.full .save{color:var(--muted-light)}
+.plan.full .save b{color:#5ee6d8}
+.plan.full .eyebrow.fire{margin:8px 0 16px}
+.arrow{margin-top:34px;text-align:center;font-weight:800;font-size:16px;line-height:1.6}
+.resma{margin-top:24px;padding:20px;border-radius:16px;background:var(--mint);border:1px solid var(--mint-line);text-align:center}
+.resma b{display:block;font-size:14px;text-transform:uppercase;color:var(--green2)}
+.resma p{margin-top:8px;font-size:14px;color:var(--muted);font-weight:600}
+.gar .g ul{margin:10px 0;padding-left:18px;font-size:14px;font-weight:600;color:var(--muted)}
+.gar .g ul li{margin-top:4px}
+.acesso .steps{margin-top:30px;display:grid;gap:14px}
+.acesso .step{display:flex;gap:14px;padding:20px 18px;border-radius:18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12)}
+.acesso .n{flex:none;width:34px;height:34px;border-radius:50%;background:var(--green);display:grid;place-items:center;font-weight:900}
+.acesso b{font-size:16px}
+.acesso .step p{margin-top:4px;font-size:14px;color:var(--muted-light)}
+.acesso .step ul{margin-top:10px;list-style:none;display:grid;gap:4px;font-size:13px;color:var(--muted-light)}
+.acesso .step li::before{content:"✓ ";color:#5ee6d8;font-weight:900}
+.acesso .btn{margin-top:30px}
+footer .disc{margin-top:12px;font-size:11px;line-height:1.5;opacity:.8}
+
+footer{padding:32px 0 110px;text-align:center;font-size:12px;color:var(--muted)}
+footer a{text-decoration:underline}
+
+/* CTA FIXO */
+.sticky{position:fixed;left:0;right:0;bottom:0;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(43,20,102,.96);backdrop-filter:blur(8px);transform:translateY(110%);transition:transform .3s;z-index:9}
+.sticky.on{transform:none}
+.sticky .btn{max-width:560px;margin:0 auto;padding:15px;font-size:15px;box-shadow:none}
+</style>
+</head>
+<body>
+<div class="topbar">⚡ OFERTA ESPECIAL DISPONÍVEL APENAS HOJE <span id="hoje"></span></div>
+
+<!-- HERO -->
+<section class="hero dark">
+  <div class="wrap">
+    <span class="pill">Atividades Adaptadas e Não Infantilizadas</span>
+    <h1>180 atividades adaptadas para alunos autistas do 6º ao 9º ano, com visual que não trata adolescente como criança</h1>
+    <p class="sub">organizadas por matéria, ano e nível de apoio, prontas para imprimir em folha comum e aplicar na próxima aula.</p>
+    <figure class="ph"><img src="imagens/hero-comparacao.webp" alt="O que você encontra por aí vs. o que você vai receber" onerror="this.remove()">imagens/hero-comparacao.webp<br>(o que você encontra por aí × o que você vai receber)</figure>
+    <a class="btn" href="#oferta">Quero as 180 atividades</a>
+    <p class="note">Download imediato · Acesso vitalício</p>
+  </div>
+</section>
+
+<!-- DOR -->
+<section class="dor dark">
+  <div class="wrap">
+    <p>Você não precisa que ninguém te explique por que adaptar é necessário. Você já adapta. O que consome o seu tempo é outra coisa: encontrar material que sirva. Você procura, acha alguma coisa, abre e é alfabetização. Acha outra, é pontilhado. Acha uma terceira, tem letra bolha e um ursinho no canto. Aí você abre o Word ou o Canva às onze da noite de domingo e monta você mesma, de novo, porque o aluno tem 14 anos e não vai aceitar folha de criança.</p>
+    <p>Aqui você recebe 180 atividades que já nascem prontas para essa realidade. Conteúdo de Fundamental 2 com a complexidade ajustada, comando de uma linha, uma tarefa por vez, espaço de resposta proporcional a quem escreve com dificuldade e nenhum elemento visual infantil em nenhuma página. Cada folha traz impresso no topo a matéria, o ano indicado e o nível de apoio, então você escolhe pelo que está escrito e não pelo que você imagina.</p>
+    <ul class="check">
+      <li>180 atividades em PDF A4, prontas para imprimir em folha comum e preto e branco</li>
+      <li>Português, Interpretação, Produção de Texto, Matemática, Ciências, História, Geografia, Rotina e Organização Escolar</li>
+      <li>Organizadas por matéria, por ano do 6º ao 9º e por três níveis de apoio: leve, moderado e alto</li>
+      <li>Visual maduro, sem letra bolha, sem pontilhado, sem desenho para colorir</li>
+      <li>Serve em sala regular, AEE, sala de recursos, reforço, atendimento psicopedagógico e uso em casa</li>
+    </ul>
+    <a class="btn" href="#oferta">Quero as 180 atividades</a>
+    <p class="note">📲 Você recebe tudo na hora, direto no seu WhatsApp e no seu e-mail</p>
+  </div>
+</section>
+
+<!-- COMPARADOR -->
+<section class="amostra">
+  <div class="wrap">
+    <h2>Veja como são as atividades que você vai receber</h2>
+    <div class="cmp">
+      <figure class="ph depois"><img src="imagens/amostra-depois.png" alt="Atividade adaptada e não infantilizada" onerror="this.remove()">imagens/amostra-depois.png</figure>
+      <figure class="ph antes"><img src="imagens/amostra-antes.webp" alt="Atividade infantilizada comum" onerror="this.remove()">imagens/amostra-antes.webp</figure>
+      <span class="lbl l">Por aí</span><span class="lbl r">Você recebe</span>
+      <div class="handle"></div>
+      <input type="range" min="0" max="100" value="50" aria-label="Comparar antes e depois" oninput="this.parentNode.style.setProperty('--x',this.value+'%')">
+    </div>
+    <p class="cmp-hint">← arraste para comparar →</p>
+  </div>
+</section>
+
+<!-- POSSUEM -->
+<section class="possuem" style="padding-top:0">
+  <div class="wrap">
+    <h2>As atividades possuem:</h2>
+    <div class="cards">
+      <div class="card"><img class="ic" src="imagens/icone-impressora.webp" alt="">Matéria, ano e nível de apoio impressos no topo de cada folha, para você escolher a certa antes de imprimir.</div>
+      <div class="card"><img class="ic" src="imagens/icone-pasta.webp" alt="">A mesma habilidade disponível em níveis diferentes de apoio, então se ele travou você troca a folha e não o planejamento.</div>
+      <div class="card"><img class="ic" src="imagens/icone-checklist.webp" alt="">Impressão em folha sulfite comum, preto e branco, sem depender de impressora colorida nem de plastificação.</div>
+      <div class="card"><img class="ic" src="imagens/icone-calendario.webp" alt="">Download imediato, sem mensalidade e com acesso vitalício.</div>
+    </div>
+  </div>
+</section>
+
+<!-- URGÊNCIA -->
+<section class="urg dark">
+  <div class="wrap">
+    <p class="eyebrow">Aproveite a oferta por tempo limitado</p>
+    <h2>Quantos domingos à noite você ainda vai passar montando do zero uma atividade que já existe pronta?</h2>
+    <a class="btn" href="#oferta">Quero acessar agora</a>
+  </div>
+</section>
+
+<!-- IDEAL -->
+<section class="ideal">
+  <div class="wrap">
+    <h2>Este material é ideal para você que deseja</h2>
+    <div class="cards">
+      <div class="card"><b>Parar de montar atividade do zero</b><p>Abrir a pasta, escolher a matéria, o ano e o nível, imprimir e aplicar, sem passar a noite montando no Word ou no Canva.</p></div>
+      <div class="card"><b>Adaptar sem infantilizar</b><p>Reduzir a complexidade da habilidade mantendo a apresentação compatível com a idade cronológica do aluno, que é o que faz ele aceitar a folha.</p></div>
+      <div class="card"><b>Ter material para o aluno que trava na folha em branco</b><p>Atividades que pedem marcar, ligar, ordenar, completar e ler tabela, e não só escrever parágrafo, para o aluno mostrar o que sabe pelo canal que ele tem.</p></div>
+      <div class="card"><b>Acertar o nível sem chutar</b><p>Ver impresso no topo da folha quanto de apoio ela exige, e trocar em dois minutos se você errar, sem refazer nada.</p></div>
+      <div class="card"><b>Ter evidência para o PEI e o conselho de classe</b><p>Guardar as folhas feitas com matéria, ano e nível registrados e chegar na reunião com portfólio, não com relatório escrito de memória na véspera.</p></div>
+      <div class="card"><b>Aplicar mesmo sem ser da área de inclusão</b><p>Receber a adaptação já feita, com foco e instrução escritos na própria folha, sem precisar de curso, de pós ou de estudar antes de entrar em sala.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- RECEBER -->
+<section class="receber" style="padding-top:0">
+  <div class="wrap">
+    <h2>Tudo o que você vai receber</h2>
+    <div class="box">
+      <span class="tag">⚡ Acesso imediato</span>
+      <h3>Tudo foi organizado para você achar a atividade certa em segundos.</h3>
+      <p>Você abre a pasta da matéria, filtra pelo ano do aluno, confere o nível de apoio no topo da folha e manda imprimir. Não tem etapa de preparação entre o arquivo e a mão do seu aluno.</p>
+      <figure class="ph"><img src="imagens/mockup-completo.webp" alt="Mockup do material completo com bônus" onerror="this.remove()">imagens/mockup-completo.webp</figure>
+      <ul class="check white">
+        <li>180 atividades adaptadas e não infantilizadas em PDF A4</li>
+        <li>Bloco 1, Leitura e Interpretação: textos curtos, enunciados simplificados e perguntas objetivas</li>
+        <li>Bloco 2, Produção de Frases e Pequenos Textos: organização de ideias, frases guiadas e ampliação de vocabulário</li>
+        <li>Bloco 3, Português Básico: vocabulário, classes de palavras, pontuação e compreensão de comandos</li>
+        <li>Bloco 4, Matemática Básica: operações, situações-problema, tabelas e matemática do cotidiano</li>
+        <li>Bloco 5, Ciências Humanas: História e Geografia com textos curtos, linha do tempo, comparação e mapas esquemáticos</li>
+        <li>Bloco 6, Ciências: corpo humano, meio ambiente, seres vivos, saúde e alimentação</li>
+        <li>Bloco 7, Rotina, Autonomia e Organização Escolar: sequência de tarefas, situações escolares e tomada de decisão</li>
+        <li>Organização por matéria, por ano do 6º ao 9º e por nível de apoio</li>
+        <li>Identificação de área, ano e nível impressa em cada folha</li>
+        <li>Arquivos em alta resolução</li>
+        <li>Versão para celular, tablet e computador</li>
+        <li>Versão imprimível em A4, otimizada para preto e branco</li>
+        <li>Download imediato</li>
+        <li>Acesso vitalício a todo material recebido</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- BÔNUS -->
+<section class="bonus">
+  <div class="wrap">
+    <h2>E não para por aí… tem mais! <span>Você também vai receber…</span></h2>
+    <span class="pill">🎁 6 Bônus exclusivos</span>
+
+    <div class="bcard"><span class="n">BÔNUS #1</span>
+      <figure class="ph"><img src="imagens/bonus-1.webp" alt="Guia Rápido de Aplicação Sem Infantilizar" onerror="this.remove()">imagens/bonus-1.webp</figure>
+      <h3>Guia Rápido de Aplicação Sem Infantilizar</h3>
+      <p>Como escolher a atividade certa, como apresentar ao aluno, como reduzir o apoio aos poucos e o que fazer quando ele trava no meio da folha. Direto ao ponto, sem teoria</p>
+      <span class="val">Valor: <s>R$27</s> <b>GRÁTIS</b></span>
+    </div>
+    <div class="bcard"><span class="n">BÔNUS #2</span>
+      <figure class="ph"><img src="imagens/bonus-2.webp" alt="Checklist de Adaptação para Fundamental 2" onerror="this.remove()">imagens/bonus-2.webp</figure>
+      <h3>Checklist de Adaptação para Fundamental 2</h3>
+      <p>Uma lista objetiva para você avaliar qualquer atividade antes de entregar: o comando está claro, a fonte está legível, tem excesso de informação, o visual está adequado à idade, tem espaço suficiente para a resposta.</p>
+      <span class="val">Valor: <s>R$27</s> <b>GRÁTIS</b></span>
+    </div>
+    <div class="bcard"><span class="n">BÔNUS #3</span>
+      <figure class="ph"><img src="imagens/bonus-4.webp" alt="30 Atividades Extras de História, Geografia e Ciências" onerror="this.remove()">imagens/bonus-4.webp</figure>
+      <h3>30 Atividades Extras de História, Geografia e Ciências</h3>
+      <p>Mais 30 folhas no mesmo padrão, 10 de cada matéria, para ampliar o repertório de humanas e ciências. Com elas você fica com 250 atividades no total</p>
+      <span class="val">Valor: <s>R$27</s> <b>GRÁTIS</b></span>
+    </div>
+    <div class="bcard"><span class="n">BÔNUS #4</span>
+      <figure class="ph"><img src="imagens/bonus-5.webp" alt="Modelos Editáveis para Adaptar as Atividades" onerror="this.remove()">imagens/bonus-5.webp</figure>
+      <h3>Modelos Editáveis para Adaptar as Atividades</h3>
+      <p>Para quando você precisar ajustar alguma coisa ao seu aluno: aumentar a fonte, tirar um distrator, trocar uma alternativa, mudar o enunciado. Você no controle, não preso a um PDF travado.</p>
+      <span class="val">Valor: <s>R$27</s> <b>GRÁTIS</b></span>
+    </div>
+    <div class="bcard"><span class="n">BÔNUS #5</span>
+      <figure class="ph"><img src="imagens/bonus-3.webp" alt="Banco de Comandos Simples para Atividades Adaptadas" onerror="this.remove()">imagens/bonus-3.webp</figure>
+      <h3>Banco de Comandos Simples para Atividades Adaptadas</h3>
+      <p>Uma lista pronta de enunciados claros para usar quando você mesma for criar ou adaptar alguma coisa, para não travar na hora de simplificar sem infantilizar.</p>
+      <span class="val">Valor: <s>R$27</s> <b>GRÁTIS</b></span>
+    </div>
+    <div class="bcard"><span class="n">BÔNUS #6</span>
+      <figure class="ph"><img src="imagens/bonus-6.webp" alt="Quadro de Níveis de Apoio" onerror="this.remove()">imagens/bonus-6.webp</figure>
+      <h3>Quadro de Níveis de Apoio</h3>
+      <p>O que significa na prática apoio leve, moderado e alto, com o que muda na folha em cada nível, para você escolher com critério e não por tentativa.</p>
+      <span class="val">Valor: <s>R$27</s> <b>GRÁTIS</b></span>
+    </div>
+  </div>
+</section>
+
+<!-- OFERTA -->
+<section class="oferta" id="oferta" style="padding-top:0">
+  <div class="wrap">
+    <p class="eyebrow fire">🔥 Última chance — oferta termina hoje</p>
+    <h2>Escolha a melhor opção para você</h2>
+
+    <div class="plan">
+      <span class="tag">Plano básico</span>
+      <figure class="ph"><img src="imagens/plano-basico.webp" alt="Plano Básico — 180 atividades adaptadas" onerror="this.remove()">imagens/plano-basico.webp</figure>
+      <p class="lead">Você recebe:</p>
+      <ul class="check">
+        <li>180 atividades adaptadas e não infantilizadas</li>
+        <li>Os 7 blocos completos, de Leitura a Rotina e Organização Escolar</li>
+        <li>Organização por matéria, ano e nível de apoio</li>
+        <li>Versão digital e imprimível em A4</li>
+        <li>Acesso imediato e vitalício</li>
+      </ul>
+      <p class="de">de <s>R$47,90</s> por:</p>
+      <p class="por"><small>R$</small> 15<small>,97</small></p>
+      <p class="meta">pagamento único · sem mensalidade</p>
+      <p class="save">Você economiza <b>R$31,93</b></p>
+      <a class="btn ghost" href="https://checkout.voidpayments.com/checkout/cmu94trgg02qm01pqhoskqxk4?offer=VQ6BTXA">Quero o plano básico</a>
+    </div>
+
+    <p class="arrow">92% das pessoas aproveitam o plano abaixo<br>👇</p>
+
+    <div class="plan full box">
+      <span class="top">⚡ Mais vendido</span>
+      <p class="eyebrow fire">🔥 Última chance — oferta termina hoje</p>
+      <span class="tag">Plano completo</span>
+      <p class="lead">⚡ 250 atividades + 6 bônus de aplicação</p>
+      <figure class="ph"><img src="imagens/mockup-completo.webp" alt="Plano Completo — 250 atividades + 6 bônus" onerror="this.remove()">imagens/mockup-completo.webp</figure>
+      <ul class="check white">
+        <li>180 atividades adaptadas e não infantilizadas</li>
+        <li>Os 7 blocos completos, de Leitura a Rotina e Organização Escolar</li>
+        <li>Organização por matéria, ano e nível de apoio</li>
+        <li>Versão digital e imprimível em A4</li>
+        <li>🎁 Bônus #1 Guia Rápido de Aplicação Sem Infantilizar</li>
+        <li>🎁 Bônus #2 Checklist de Adaptação para Fundamental 2</li>
+        <li>🎁 Bônus #3 30 Atividades Extras de História, Geografia e Ciências</li>
+        <li>🎁 Bônus #4 Modelos Editáveis para Adaptar as Atividades</li>
+        <li>🎁 Bônus #5 Banco de Comandos Simples</li>
+        <li>🎁 Bônus #6 Quadro de Níveis de Apoio</li>
+        <li>Acesso vitalício a todo material</li>
+      </ul>
+      <p class="de">de <s>R$147,90</s> por:</p>
+      <p class="por"><small>R$</small> 25<small>,97</small></p>
+      <p class="meta">pagamento único · sem mensalidade</p>
+      <p class="save">Você economiza <b>R$121,93</b></p>
+      <a class="btn" href="https://checkout.voidpayments.com/checkout/cmu94trgg02qm01pqhoskqxk4?offer=EH0MBRA">Quero o plano completo</a>
+      <div class="pay"><span>🔒 Compra 100% segura e garantida</span><span>💳 Cartão · Pix</span><span>📥 Acesso imediato</span></div>
+    </div>
+
+    <div class="resma">
+      <b>✓ Uma resma de papel e um cartucho custam mais que o plano completo, e acabam</b>
+      <p>As atividades ficam com você para todos os alunos que vierem.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GARANTIA -->
+<section class="gar" style="padding-top:0">
+  <div class="wrap">
+    <div class="g">
+      <img class="selo" src="imagens/selo-garantia.png" alt="Garantia de 30 dias ou seu dinheiro de volta">
+      <h2>Garantia de 30 dias<br><span>Zero risco pra você</span></h2>
+      <p class="intro">Isso significa que, a qualquer momento, se você achar que:</p>
+      <ul>
+        <li>as atividades não são o que você esperava.</li>
+        <li>o material não serve para o nível de apoio do seu aluno.</li>
+        <li>ou simplesmente não quiser continuar com ele.</li>
+      </ul>
+      <p class="fim">Você pode solicitar o reembolso. <b>Sem prazo, sem burocracia.</b> O risco fica todo do nosso lado.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ACESSO -->
+<section class="acesso dark">
+  <div class="wrap">
+    <h2>Como é o acesso</h2>
+    <p class="eyebrow" style="margin-top:10px">(Veja como é simples acessar as atividades)</p>
+    <div class="steps">
+      <div class="step"><span class="n">1</span><div><b>Conclua sua compra</b><p>Após o pagamento, seu acesso é liberado automaticamente.</p><ul><li>Pagamento seguro</li><li>Confirmação imediata</li><li>Acesso direto ao material</li></ul></div></div>
+      <div class="step"><span class="n">2</span><div><b>Entre na área de membros</b><p>Acesse seu painel com todas as atividades e bônus</p><ul><li>Visualização fácil</li><li>Organização por blocos, ano e nível de apoio</li><li>Download rápido dos PDFs</li></ul></div></div>
+      <div class="step"><span class="n">3</span><div><b>Baixe os arquivos</b><p>Salve as atividades no celular, no tablet ou no computador</p><ul><li>Alta resolução</li><li>Prontas para imprimir em A4</li><li>Ficam salvos com você</li></ul></div></div>
+      <div class="step"><span class="n">4</span><div><b>Imprima e aplique</b><p>Escolha o nível do seu aluno e leve a folha para a aula</p><ul><li>Busca rápida por matéria e ano</li><li>Impressão em folha comum, preto e branco</li><li>Acesso vitalício</li></ul></div></div>
+    </div>
+    <a class="btn" href="#oferta">Quero acessar agora</a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="wrap">
+    <h2>Perguntas frequentes</h2>
+    <details><summary>Serve para o nível de apoio do meu aluno?</summary><p>Cada atividade traz impresso no topo o nível de apoio que ela exige: leve, moderado ou alto. No apoio leve a folha é mais densa e o aluno tem mais autonomia. No moderado o comando é mais curto, com apoio visual e mediação pontual. No alto a tarefa é mais enxuta, uma coisa de cada vez e mais guiada. A mesma habilidade aparece em níveis diferentes, então se ele travou você troca a folha e imprime outra na hora. O Bônus #6 explica os três níveis em detalhe.</p></details>
+    <details><summary>As atividades são adequadas para aluno do Fundamental 2 mesmo?</summary><p>Sim, e essa é a razão de existir do material. A complexidade da habilidade é reduzida, a apresentação não. Não tem letra bolha, pontilhado, personagem infantil, carinha sorridente nem desenho para colorir em nenhuma das 180 folhas. Os temas, as imagens e a linguagem são compatíveis com quem tem entre 11 e 15 anos.</p></details>
+    <details><summary>Preciso ser da área de inclusão para aplicar?</summary><p>Não. A adaptação já vem feita e vem escrita na própria folha, com o foco da atividade e a instrução no topo. Não tem manual para estudar antes nem curso para fazer. Você lê, imprime e aplica. Serve para professor de matéria comum que recebeu um aluno autista, para profissional de AEE, para psicopedagogo e para responsável em casa.</p></details>
+    <details><summary>Funciona em escola pública, sem recurso?</summary><p>Sim. As atividades foram feitas para impressão em folha sulfite comum, em preto e branco. Não dependem de impressora colorida, de plastificação, de papel especial nem de material extra.</p></details>
+    <details><summary>Qual é o formato e como eu acesso?</summary><p>São arquivos em PDF de alta resolução, para abrir no celular, no tablet ou no computador, com versão imprimível em A4. O acesso é liberado logo após a confirmação do pagamento e é vitalício.</p></details>
+    <details><summary>As atividades são editáveis?</summary><p>O material principal vem em PDF pronto para imprimir. No plano completo, o Bônus #4 traz modelos editáveis para você ajustar o que precisar: aumentar a fonte, tirar um distrator, trocar uma alternativa ou mudar o enunciado.</p></details>
+    <details><summary>Serve para qual ano?</summary><p>Do 6º ao 9º ano. Cada atividade indica o ano sugerido no topo, mas você pode usar a de outro ano se ela encaixar melhor com o momento do seu aluno. A indicação existe para orientar, não para limitar.</p></details>
+    <details><summary>Isso substitui acompanhamento pedagógico ou terapêutico?</summary><p>Não. É material pedagógico de aplicação, para você usar em sala, no AEE, no reforço, no atendimento ou em casa. Não é avaliação, não é diagnóstico e não substitui o trabalho da equipe que acompanha o aluno.</p></details>
+    <details><summary>E se eu não gostar?</summary><p>Você tem 30 dias para solicitar o reembolso, sem burocracia.</p></details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>©️ Todos os direitos reservados.</p>
+    <p style="margin-top:8px"><a href="/politica-de-privacidade">Política de privacidade</a> · <a href="/termos-de-uso">Termos de uso</a></p>
+    <p class="disc">Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Após sair do Facebook, a responsabilidade não é deles e sim do nosso site. Fazemos todos os esforços para indicar claramente e mostrar todas as provas do produto e usamos resultados reais. Nós não vendemos o seu e-mail ou qualquer informação para terceiros. Jamais fazemos algum tipo de spam. Se você tiver alguma dúvida, sinta-se à vontade para usar o link de contato e falar conosco em horário comercial de Segunda a Sexta, das 09h00 às 18h00. Lemos e respondemos todas as mensagens por ordem de chegada.</p>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky"><a class="btn" href="#oferta">Quero as 180 atividades</a></div>
+<script>
+document.getElementById('hoje').textContent=new Date().toLocaleDateString('pt-BR');
+// ponytail: mostra o CTA fixo só depois do hero
+addEventListener('scroll',()=>{const o=document.getElementById('oferta').getBoundingClientRect();document.getElementById('sticky').classList.toggle('on',scrollY>600&&(o.top>innerHeight||o.bottom<0))},{passive:true});
+</script>
+</body>
+</html>
