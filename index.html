@@ -17,6 +17,8 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
 <style>
 :root{
   --navy:#2b1466; --navy2:#1f0e4d; --beige:#f3effb; --beige2:#faf8ff; --card:#fff;
@@ -32,7 +34,7 @@ a{color:inherit;text-decoration:none}
 section{padding:52px 0}
 .dark{background:var(--navy);color:#fff}
 .dark .muted{color:var(--muted-light)}
-h1,h2,h3{font-weight:900;line-height:1.12;letter-spacing:-.01em;text-align:center}
+h1,h2,h3{font-family:Montserrat,Inter,system-ui,sans-serif;font-weight:900;line-height:1.12;letter-spacing:-.01em;text-align:center}
 h2{font-size:clamp(28px,7.5vw,38px);text-transform:uppercase}
 .eyebrow{text-align:center;font-size:12px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;margin-bottom:14px}
 .pill{display:block;width:fit-content;margin:0 auto 22px;padding:9px 18px;border-radius:999px;background:var(--beige);color:var(--navy);font-size:13px;font-weight:800}
@@ -114,6 +116,15 @@ h2{font-size:clamp(28px,7.5vw,38px);text-transform:uppercase}
 .val b{color:var(--gold)}
 
 /* OFERTA */
+.plan{padding-top:0}
+.ptitle{margin:0 -22px 24px;padding:30px 20px 24px;border-radius:23px 23px 0 0;background:linear-gradient(135deg,#4a2aa8,#2b1466 60%,#1f0e4d);color:#fff;font-family:Montserrat,Inter,sans-serif;font-weight:900;font-size:clamp(30px,8vw,40px);line-height:1;letter-spacing:.02em;text-transform:uppercase;text-align:center;position:relative;overflow:hidden}
+.ptitle::after{content:"";position:absolute;inset:auto -20% -60% -20%;height:120%;background:radial-gradient(ellipse at center,rgba(94,230,216,.35),transparent 60%);pointer-events:none}
+.ptitle small{display:block;font-size:12px;letter-spacing:.3em;font-weight:800;opacity:.8;margin-bottom:8px}
+.plan.full .ptitle{padding-top:40px;background:linear-gradient(135deg,#5ee6d8,#1fb5a5 70%,#178f83);color:var(--navy)}
+.plan.full .ptitle::after{background:radial-gradient(ellipse at center,rgba(255,255,255,.35),transparent 60%)}
+.plan.full .ptitle small{opacity:.75}
+.plan.full .top{z-index:1}
+.plan.full .eyebrow.fire{color:#ff6b9d}
 .plan{margin-top:26px;padding:28px 22px;border-radius:26px;background:#fff;text-align:center;box-shadow:0 6px 24px rgba(0,0,0,.06)}
 .plan .tag{background:var(--navy)}
 .plan .ph{min-height:0;aspect-ratio:1;background:var(--beige2)}
@@ -356,7 +367,7 @@ footer a{text-decoration:underline}
     <h2>Escolha a melhor opção para você</h2>
 
     <div class="plan">
-      <span class="tag">Plano básico</span>
+      <div class="ptitle"><small>Plano</small>Básico</div>
       <figure class="ph"><img src="imagens/plano-basico.webp" alt="Plano Básico — 150 atividades adaptadas" onerror="this.remove()">imagens/plano-basico.webp</figure>
       <p class="lead">Você recebe:</p>
       <ul class="check">
@@ -377,8 +388,8 @@ footer a{text-decoration:underline}
 
     <div class="plan full box">
       <span class="top">⚡ Mais vendido</span>
+      <div class="ptitle"><small>Plano</small>Completo</div>
       <p class="eyebrow fire">🔥 Última chance — oferta termina hoje</p>
-      <span class="tag">Plano completo</span>
       <p class="lead">⚡ 180 atividades + 6 bônus de aplicação</p>
       <figure class="ph"><img src="imagens/mockup-completo.webp" alt="Plano Completo — 180 atividades + 6 bônus" onerror="this.remove()">imagens/mockup-completo.webp</figure>
       <ul class="check white">
